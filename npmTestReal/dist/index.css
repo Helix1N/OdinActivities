@@ -1,0 +1,96 @@
+.headerContainer {
+    height: 10vh;
+    background-color: rgb(81, 81, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    width: 100vw;
+    top: 0px;
+}
+body {
+    margin: 0%;
+    height: 120vh;
+}
+
+.headerBox {
+    height: 100%;
+    border: 0.5px black solid;
+    border-bottom: 0;
+    border-top: 0;
+    width: min-content;
+}
+
+#bodyRestaurant {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(6,1fr);
+}
+#bodyContainer0 {
+    height: 15vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/7;
+}
+
+#bodyContainer1 {
+    height: 73vh;
+    background-color: rgb(255, 255, 255);
+    grid-column: 2/6;
+}
+.bodyContent {
+    border: 1px black solid;
+    width: min-content;
+    margin: 20px;
+}
+#bodyContent0 {
+    flex-grow: 1;
+    max-width: 170px;
+}
+.line {
+    flex-shrink: 1;
+}
+#buttonid0, #buttonid1 {
+    margin: 20px;
+}
+
+#bodyContainer1 {
+    display: grid;
+    max-width: 70vw;
+    gap: 10px;
+    margin: 20px;
+}
+.body2Content {
+    border-radius: 20px;
+}
+
+#body2Content0 {
+    background-color: aqua;
+    grid-column: 1/5;
+    grid-row: 1/4;
+}
+#body2Content1 {
+    background-color: blue;
+    grid-column: 5/6;
+    grid-row: 2/4;
+}
+#body2Content2 {
+    background-color: rgb(173, 121, 58);
+    grid-row: 4/5;
+    grid-column: 1/6;
+
+}
+#body2Content3 {
+    background-color: blueviolet;
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+#footerContainer {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(136, 136, 136);
+}
