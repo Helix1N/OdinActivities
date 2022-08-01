@@ -85,6 +85,11 @@ const restaurantBody = (() => {
     third();
 })();
 
+let img = document.createElement("img");
+img.src = "Documents/VisualStudioCodes/npmTestReal/hamburguer.png";
+let src1 = document.getElementById("body2Content0");
+src1.appendChild(img);
+
 const callToAction = document.querySelector("#bodyContent0");
 callToAction.textContent = "COMEÇAR O PEDIDO";
 const entregaBtn = document.getElementById("buttonid0");
@@ -101,4 +106,42 @@ const siteFooter = (() => {
     const footerBody = document.createElement("div");
     footerBody.id = "footerBody";
     footerContainer.appendChild(footerBody);
+
+    for(let i = 0; i < 3; i++) {
+        let div = document.createElement("div");
+        div.className = "footerContent";
+        div.id = "footerContent" + i;
+        footerBody.appendChild(div);
+    }
+
+    const firstFooterContent = document.getElementById("footerContent0");
+    const thirdFooterContent = document.getElementById("footerContent2");
+    for(let i = 0; i < 6; i++) {
+        let div = document.createElement("div");
+        div.className = "footerContentLinks";
+        div.id = "footerContentLinks" + i;
+        firstFooterContent.appendChild(div);
+    }
+
+    for(let i = 0; i < 5; i++) {
+        let p = document.createElement("p");
+        p.className = "footerContentPhrases";
+        p.id = "footerContentPhrases" + i;
+        thirdFooterContent.appendChild(p);
+    }
+    const firstFooterP = document.getElementById("footerContentPhrases0");
+    firstFooterP.textContent = "Serviço disponível nas áreas de entrega Domino´s Pizza, todos os dias, de acordo com o horário de funcionamento de cada loja. A Domino´s Pizza Brasil se reserva o direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos CONTÉM GLÚTEN. Alérgicos: todos os nossos produtos contém ou podem conter traços de Trigo, Ovos, Leite e Soja. As formas de pagamento variam de acordo com cada loja. Imagens meramente ilustrativas. Consulte se sua loja de preferência pratica a promoção escolhida Em caso de dúvidas, consulte nosso SAC:sac@dominos.com.br.";
+    const secondFooterP = document.getElementById("footerContentPhrases1");
+    secondFooterP.textContent = "*Preços a partir de podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.";
+    const thirdFooterP = document.getElementById("footerContentPhrases2");
+    thirdFooterP.textContent = "DOMINOS PIZZA BRASIL, Av. das Américas, 500 - Bloco 7 – 3º andar – Barra da Tijuca, Rio de Janeiro/RJ - 22640-100";
+    const fourthFooterP = document.getElementById("footerContentPhrases3");
+    fourthFooterP.textContent = "S.A.C: Dúvidas, reclamações, sugestões e / ou elogios envie um e-mail para: sac@dominos.com.br";
+    const fifthFooterP = document.getElementById("footerContentPhrases4");
+    fifthFooterP.textContent = "Informações sobre o uso de dados pessoais e pedidos de descadastro do banco de dados, envie um e-mail para: encarregadodados@dominos.com.br – Encarregado de Dados - Michel Nascimento";
+
+
+
+
+
 })();

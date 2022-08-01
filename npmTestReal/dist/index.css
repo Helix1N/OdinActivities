@@ -12,6 +12,11 @@ body {
     margin: 0%;
     height: 120vh;
 }
+p {
+    margin: 0%;
+    font-size: 13px;
+    padding: 5px;
+}
 
 .headerBox {
     height: 100%;
@@ -28,16 +33,17 @@ body {
 }
 #bodyContainer0 {
     height: 15vh;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     grid-column: 1/7;
+    margin-top: 20px;
 }
 
 #bodyContainer1 {
-    height: 73vh;
+    height: 80vh;
     background-color: rgb(255, 255, 255);
     grid-column: 2/6;
 }
@@ -57,11 +63,21 @@ body {
     margin: 20px;
 }
 
+#bodyRestaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #bodyContainer1 {
     display: grid;
-    max-width: 70vw;
+    width: 90vw;
     gap: 10px;
+    margin-top: 0%;
     margin: 20px;
+    max-width: 1100px;
+    
+
 }
 .body2Content {
     border-radius: 20px;
@@ -91,6 +107,41 @@ body {
 
 #footerContainer {
     width: 100vw;
-    height: 40vh;
+    height: 70vh;
     background-color: rgb(136, 136, 136);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footerBody {
+    border: 1px solid black;
+    width: 80vw;
+    height: 90%;
+    
+}
+
+#footerContent0 {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    flex-direction: row;
+}
+
+.footerContentLinks {
+
+    height: 100%;
+    background-color: aqua;
+    border: 1px solid black;
+    width: 15%;
+}
+
+#footerContent1 {
+    height: 30%;
+    background-color: bisque;
+}
+
+#footerContent2 {
+    height: 50%;
+    background-color: azure;
 }
