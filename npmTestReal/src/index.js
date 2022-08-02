@@ -85,10 +85,37 @@ const restaurantBody = (() => {
     third();
 })();
 
+const firstsBanner = document.getElementById("body2Content0");
+const secondBanner = document.getElementById("body2Content2");
+const thirdBanner = document.getElementById("body2Content1");
+const fourthBanner = document.getElementById("body2Content3");
+
 let img = document.createElement("img");
-img.src = "Documents/VisualStudioCodes/npmTestReal/hamburguer.png";
-let src1 = document.getElementById("body2Content0");
-src1.appendChild(img);
+img.src = "hamburguer.png";
+img.style.width = "100%";
+img.style.height = "100%";
+img.style.borderRadius = "10px";
+firstsBanner.appendChild(img);
+
+/*let img1 = document.createElement("img");
+img1.src = "veggie.png";
+img1.style.width = "100%";
+img1.style.height = "100%";
+secondBanner.appendChild(img1);*/
+
+let img2 = document.createElement("img");
+img2.src = "burger.jpeg";
+img2.style.width = "100%";
+img2.style.height = "100%";
+img2.style.borderRadius = "10px";
+thirdBanner.appendChild(img2);
+
+let img3 = document.createElement("img");
+img3.src = "burger2.jpg";
+img3.style.width = "100%";
+img3.style.height = "100%";
+img3.style.borderRadius = "10px";
+fourthBanner.appendChild(img3);
 
 const callToAction = document.querySelector("#bodyContent0");
 callToAction.textContent = "COMEÇAR O PEDIDO";
@@ -115,6 +142,7 @@ const siteFooter = (() => {
     }
 
     const firstFooterContent = document.getElementById("footerContent0");
+    const secondFooterContent = document.getElementById("footerContent1");
     const thirdFooterContent = document.getElementById("footerContent2");
     for(let i = 0; i < 6; i++) {
         let div = document.createElement("div");
@@ -122,6 +150,34 @@ const siteFooter = (() => {
         div.id = "footerContentLinks" + i;
         firstFooterContent.appendChild(div);
     }
+    const firstFooterLink = document.getElementById("footerContentLinks0");
+    firstFooterLink.textContent = "Internacional";
+    const secondFooterLink = document.getElementById("footerContentLinks1");
+    secondFooterLink.textContent = "Sobre o Hambúrguer";
+    const thirdFooterLink = document.getElementById("footerContentLinks2");
+    thirdFooterLink.textContent = "Políticas de Privacidade";
+    const fourthFooterLink = document.getElementById("footerContentLinks3");
+    fourthFooterLink.textContent = "Seja um Franqueado";
+    const fifthFooterLink = document.getElementById("footerContentLinks4");
+    fifthFooterLink.textContent = "Fale Conosco";
+    const sixthFooterLink = document.getElementById("footerContentLinks5");
+    sixthFooterLink.textContent = "Termos de Uso";
+
+    for(let i = 0; i < 4; i++) {
+        let div = document.createElement("div");
+        div.className = "footerContentSocials";
+        div.id = "footerContentSocials" + i;
+        secondFooterContent.appendChild(div);
+    }
+
+    const firstFooterSocial = document.getElementById("footerContentSocials0");
+    firstFooterSocial.textContent = "FACEBOOK";
+    const secondFooterSocial = document.getElementById("footerContentSocials1");
+    secondFooterSocial.textContent = "TWITTER";
+    const thirdFooterSocial = document.getElementById("footerContentSocials2");
+    thirdFooterSocial.textContent = "INSTAGRAM";
+    const fourthFooterSocial = document.getElementById("footerContentSocials3");
+    fourthFooterSocial.textContent = "LOGO";
 
     for(let i = 0; i < 5; i++) {
         let p = document.createElement("p");
