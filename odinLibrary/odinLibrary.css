@@ -7,3 +7,16 @@
 .red.green {
     background-color: green;
 }
+
+.big-container {
+    background-image: linear-gradient(to bottom right, rgb(255, 138, 230), rgb(0, 255, 76));
+    padding: 20px;
+    border: 0.5px solid yellow;
+
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to top right, rgb(58, 100, 179), rgb(0, 255, 191));
+}
+
