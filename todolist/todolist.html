@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+</head>
+<body>
+    <div class="bigContainer">
+        <div class="header">
+            <div class="headerLeft">
+                <i class="fa fa-bars"></i>
+                <div class="inputContainer">
+                    <input type="text" placeholder="To-do..." id="todoName">
+                    <input type="text" placeholder="14h..." id="todoTime">
+                </div>
+            </div>
+            <div class="headerRight">
+                <button class="addTodo">+</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="leftTab">
+                <div class="fixed">
+                    <div class="inbox">Inbox</div>
+                    <div class="today">Today</div>
+                    <div class="upcoming">Upcoming</div>
+                    <div class="filters">Filters & Labels</div>
+                </div>
+                <div class="favorites">V Favorites</div>
+                <div class="projects">V Projects</div>
+            </div>
+            <div class="todosContainer">
+                <div class="upper">Today
+                    <i class="fa fa-bars">Views</i>
+                </div>
+                <div class="lower">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="todolist.js"></script>
+<link rel="stylesheet" href="todolist.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</html>

@@ -1,0 +1,72 @@
+
+:root {
+    --checkBoxHeight: 50%;
+    --checkBoxWidth: calc((var(--todoHeight)*var(--checkBoxHeight)));
+    --todoHeight: 7vh;
+}
+
+body {
+    margin: 0%;
+}
+
+.bigContainer {
+    height: 100%;
+}
+
+.header {
+    height: var(--todoHeight);
+    background-color: rgb(211, 64, 64);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    
+    display: flex;
+    flex-direction: row;
+
+}
+
+.leftTab {
+    height: 93vh;
+    width: 20%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.todosContainer {
+    height: 93vh;
+    width: 80%;
+    background-color: rgb(39, 107, 107);
+}
+.upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo {
+    height: 7vh;
+    background-color:  aquamarine;
+    display: flex;
+    border: 0.5px black solid;
+    display: flex;
+    justify-content: space-between;
+
+}
+.checkBox {
+    width: 50%;
+    height: 60%;
+    border-radius: 25%;
+}
+.headerLeft {
+    display: flex;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
