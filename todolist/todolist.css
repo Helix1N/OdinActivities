@@ -35,7 +35,7 @@ body {
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     padding: 10px;
 }
 
@@ -69,4 +69,15 @@ body {
 .inputContainer {
     display: flex;
     flex-direction: column;
+}
+
+.fixed {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.fixedTabs {
+    border: 0.5px black solid;
+    background-image: linear-gradient(to left, rgb(73, 44, 78), rgb(106, 172, 216));
 }

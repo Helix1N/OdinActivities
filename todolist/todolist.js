@@ -3,8 +3,17 @@ const addTodoBtn = document.querySelector(".addTodo");
 //const checkBox = document.querySelectorAll(".checkBox");
 addTodoBtn.addEventListener("click", createTodoDiv);
 //checkBox.forEach(element => element.addEventListener("click", checkTheBox));
+const favoritesContainer = document.querySelector(".favoritesContainer");
 
-let todoArray = [{name: 'Fazer Lista', time: '15h'}, {name: 'Deitar e rolar', time: '17h'}];
+
+
+
+
+
+
+
+
+let todoArray = [];
 todoArray = JSON.parse(localStorage.getItem("todos"));
 
 const todoMaker = ((name, time) => {
@@ -60,11 +69,24 @@ function loadPage () {
             todo.appendChild(deleteBtn);
         
         })();
+        const addFavoriteBtn = (() => {
+            let favoriteBtn = document.createElement("button");
+            favoriteBtn.className = "favoriteBtn";
+            favoriteBtn.textContent = "☆";
+            favoriteBtn.addEventListener("click", addToFavorites);
+            todo.appendChild(favoriteBtn);
+        })();
         function deleteTodo() {
             todoList.removeChild(todo);
             todoArray.splice(todo.id, 1);
             localStorage.setItem("todos", JSON.stringify(todoArray));
     
+        }
+        function addToFavorites() {
+            let todoFav = document.createElement("div");
+            todoFav.className = "favorites";
+            todoFav.textContent = todoArray[i].name;
+            favoritesContainer.appendChild(todoFav);
         }
     }
     localStorage.setItem("todos", JSON.stringify(todoArray));
