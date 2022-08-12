@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcff59;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#gameboard-container {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    margin-bottom: 50px;
+}
+
+.caixa0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+.caixa1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+.caixa2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+.caixa3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+.caixa4 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+.caixa5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+.caixa6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+.caixa7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+.caixa8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+
+#winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 5px;
+    border-radius: 10px;
+    height: 60px;
+    width: 500px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(32, 15, 65);
+    background-color: rgb(245, 236, 202);
+}
+
+#resetBtn {
+    outline-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    border: solid 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(32, 15, 65);
+    background-color: rgb(245, 236, 202);
+}
