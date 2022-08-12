@@ -80,4 +80,8 @@ body {
 .fixedTabs {
     border: 0.5px black solid;
     background-image: linear-gradient(to left, rgb(73, 44, 78), rgb(106, 172, 216));
+    width: fit-content;
+    padding: 5px;
+    padding-right: 15px;
+    
 }
