@@ -4,14 +4,12 @@ const addTodoBtn = document.querySelector(".addTodo");
 addTodoBtn.addEventListener("click", createTodoDiv);
 //checkBox.forEach(element => element.addEventListener("click", checkTheBox));
 const favoritesContainer = document.querySelector(".favoritesContainer");
-
-
-
-
-
-
-
-
+const fa = document.querySelector(".fa");
+fa.addEventListener("click", displayfa);
+const fade = document.querySelector(".fade");
+const tictactoe = document.querySelector(".tictactoe");
+tictactoe.addEventListener("click", goTicTacToePage);
+let otherOpen = false;
 
 let todoArray = [];
 todoArray = JSON.parse(localStorage.getItem("todos"));
@@ -83,10 +81,24 @@ function loadPage () {
     
         }
         function addToFavorites() {
-            let todoFav = document.createElement("div");
+            let todoFavContainer = document.createElement("div");
+            favoritesContainer.appendChild(todoFavContainer);
+            let todoFav = document.createElement("button");
+            let delFav = document.createElement("button");
+            delFav.textContent = "-";
+            delFav.addEventListener("click", () => {
+                favoritesContainer.removeChild(todoFavContainer);
+            })
             todoFav.className = "favorites";
             todoFav.textContent = todoArray[i].name;
-            favoritesContainer.appendChild(todoFav);
+            todoFav.addEventListener("click", () => {
+                let horas = prompt("Defina as horas para a atividade: ");
+                if (horas === null) return;
+                todoArray[todoArray.length] = todoMaker(todoFav.textContent, horas);
+                loadPage();
+            })
+            todoFavContainer.appendChild(todoFav);
+            todoFavContainer.appendChild(delFav);
         }
     }
     localStorage.setItem("todos", JSON.stringify(todoArray));
@@ -106,3 +118,30 @@ function createTodoDiv () {
     
     
 }
+
+function goTicTacToePage() {
+    window.location.replace("tictactoe/tictactoecopy.html");
+}
+
+function displayfa(e) {
+    console.log(e.target);
+    console.log(this);
+    if (otherOpen) {
+        if (e.target === this) {
+            fade.classList.toggle("visible");
+            otherOpen = false;
+        }
+        
+    }
+    else {
+        fade.classList.toggle("visible");
+        otherOpen = true;
+    }
+    
+
+    
+}
+function hidePopup() {
+    fade.classList.toggle('visible');
+    otherOpen = false;
+  }
